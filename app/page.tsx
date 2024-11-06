@@ -1,7 +1,10 @@
+import Header from "./components/Header";
+
 export default function Home() {
   return (
-    <div>
-      <p>hello world???</p>
+    <div className="h-screen">
+      <Header />
+      helloworld?
     </div>
   );
 }
