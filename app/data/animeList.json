@@ -1,28 +1,33 @@
 [
   {
     "id": "1",
-    "name": "Godzilla x kong: the new empire",
-    "image": "/trending-now/godzilla-x-kong-the-new-empire.png"
+    "name": "One Piece",
+    "image": "/anime/one-piece.png"
 
   },
   {
     "id": "2",
-    "name": "Godzilla x kong: the new empire",
-    "image": "/trending-now/godzilla-x-kong-the-new-empire.png"
+    "name": "Jujutsu Kaisen",
+    "image": "/anime/jujutsu-kaisen.png"
   },
   {
     "id": "3",
-    "name": "Godzilla x kong: the new empire",
-     "image": "/trending-now/godzilla-x-kong-the-new-empire.png"
+    "name": "Demon Slayer: Kimetsu no Yaiba",
+     "image": "/anime/demon-slayer.png"
   },
   {
     "id": "4",
-    "name": "Godzilla x kong: the new empire",
-     "image": "/trending-now/godzilla-x-kong-the-new-empire.png"
+    "name": "Black Clover",
+     "image": "/anime/black-clover.png"
   },
   {
     "id": "5",
-    "name": "Godzilla x kong: the new empire",
-     "image": "/trending-now/godzilla-x-kong-the-new-empire.png"
+    "name": "Hunter x Hunter",
+     "image": "/anime/hunter-x-hunter.png"
+  },
+  {
+    "id": "6",
+    "name": "Tokyo Revengers",
+     "image": "/anime/tokyo-revengers.png"
   }
 ]

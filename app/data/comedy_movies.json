@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "name": "The Director",
+    "image": "/comedy-movies/the-dictator.png"
+
+  },
+  {
+    "id": "2",
+    "name": "Anyone but you",
+    "image": "/comedy-movies/anyone-but-u.png"
+  },
+  {
+    "id": "3",
+    "name": "Focus",
+     "image": "/comedy-movies/focus.png"
+  },
+  {
+    "id": "4",
+    "name": "Argylle",
+     "image": "/comedy-movies/argylle.png"
+  },
+  {
+    "id": "5",
+    "name": "Dolittle",
+     "image": "/comedy-movies/dollitle.png"
+  },
+  {
+    "id": "5",
+    "name": "Beverly Hills Cop: Axel F",
+     "image": "/comedy-movies/beverly-hills-cop.png"
+  }
+]

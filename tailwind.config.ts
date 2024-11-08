@@ -61,7 +61,7 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 			animation: {
-        "meteor-effect": "meteor 5s linear infinite",
+        "meteor-effect": "meteor 6s linear infinite",
       },
 			keyframes: {
         meteor: {
@@ -72,6 +72,13 @@ const config: Config = {
             opacity: "0",
           },
         },
+				pulse: {
+					"0%": { transform: "rotate(215deg) translateX(20px)", opacity: "0" },
+          "100%": {
+            transform: "rotate(215deg) translateX(0)",
+            opacity: "1",
+          },
+				}
       },
   	},
 		screens: {
