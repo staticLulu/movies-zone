@@ -7,7 +7,7 @@ import trending_movies from '@/app/data/trending_movies.json';
 
 const TVShows = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto p-5">
+    <div className="max-w-screen-xl mx-auto p-5">
       <ContentSection title="POPULAR MOVIES">    
 
         <div className="grid grid-cols-5 gap-6 mt-8">

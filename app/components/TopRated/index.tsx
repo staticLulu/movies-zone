@@ -7,11 +7,11 @@ import top_rated from '@/app/data/top_rated.json';
 
 const TopRated = () => {
   return (
-    <div className="max-w-screen-2xl mx-auto p-5">
+    <div className="max-w-screen-xl mx-auto p-5">
       <ContentSection title="TOP RATED">
-        <div className="grid grid-cols-5 gap-6 mt-8">
+        <div className="grid grid-cols-6 gap-6 mt-8">
           {top_rated.map((t_movie: TMovies, idx: number) => (
-            <VerticalCard key={idx} image={t_movie.image} />
+            <VerticalCard key={idx} image={t_movie.image} name={t_movie.name} /> 
           ))}
         </div>
       </ContentSection>

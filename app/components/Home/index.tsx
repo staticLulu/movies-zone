@@ -1,7 +1,7 @@
 'use client'
 
+import { Button } from "@/components/ui/button";
 import { PlayIcon, StarIcon } from "@radix-ui/react-icons"
-import { Button } from "../ui/button";
 import Image from "next/image";
 
 const HomeComponent = () => {
@@ -19,7 +19,7 @@ const HomeComponent = () => {
         -translate-y-1/2
       "
     >
-      <div className="flex justify-between items-center w-full max-w-screen-2xl p-4">
+      <div className="flex justify-between items-center w-full max-w-screen-xl p-4">
         {/* Text Content */}
         <div className="max-w-[440px]">
           <p className="text-4xl font-bold text-[#FEF3E2]">Furiosa: A Mad Max Saga</p>

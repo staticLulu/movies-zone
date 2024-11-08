@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { PlayIcon, StarIcon, VideoIcon } from "@radix-ui/react-icons";
-import { Button } from "./ui/button";
 import { Link as ReactScrollLink } from "react-scroll";
 import Link from "next/link";
+import { Button } from "@/components/ui/button";
 
 export interface MenuItemProps {
   href: string;
@@ -38,7 +38,7 @@ const Header = () => {
 
       {/* Main Header */}
       <header className="fixed top-0 left-0 w-full z-50">
-        <div className="max-w-screen-2xl mx-auto p-4">
+        <div className="max-w-screen-xl mx-auto p-4">
           <div className="flex justify-between items-center">
 
             {/* Logo Section */}
@@ -65,14 +65,14 @@ const Header = () => {
           justify-center 
           items-center 
           absolute 
-          !top-[380px] 
+          !top-[460px] 
           left-0 
           w-full 
           transform 
           -translate-y-1/2
         "
       >
-        <div className="flex justify-between items-center w-full max-w-screen-2xl p-4">
+        <div className="flex justify-between items-center w-full max-w-screen-xl p-4">
           {/* Text Content */}
           <div className="max-w-[440px]">
             <p className="text-4xl font-bold text-[#FEF3E2]">Furiosa: A Mad Max Saga</p>
