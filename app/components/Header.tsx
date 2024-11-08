@@ -1,10 +1,11 @@
 'use client'
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { PlayIcon, StarIcon, VideoIcon } from "@radix-ui/react-icons";
 import { Link as ReactScrollLink } from "react-scroll";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
+import { WatchButton } from "./WatchButton";
 
 export interface MenuItemProps {
   href: string;
@@ -20,6 +21,20 @@ export const menuItems: MenuItemProps[] = [
 ];
 
 const Header = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);  // Add blur when scrollY is greater than 0
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="relative w-full h-auto">
       <Link href={'/'} rel="preload">
@@ -37,7 +52,11 @@ const Header = () => {
       <div className="absolute inset-0 bg-primary-gradient"></div>
 
       {/* Main Header */}
-      <header className="fixed top-0 left-0 w-full z-50">
+      <header className={`
+        fixed top-0 left-0 w-full z-50 
+        transition-all duration-0 
+        ${scrolled ? 'backdrop-blur-3xl bg-slate-800/40' : ''}
+      `}>
         <div className="max-w-screen-xl mx-auto p-4">
           <div className="flex justify-between items-center">
 
@@ -65,7 +84,7 @@ const Header = () => {
           justify-center 
           items-center 
           absolute 
-          !top-[460px] 
+          !top-[430px] 
           left-0 
           w-full 
           transform 
@@ -80,19 +99,9 @@ const Header = () => {
               In "Furiosa: A Mad Max Saga," the fierce warrior Furiosa embarks on a perilous journey through a 
               post-apocalyptic wasteland, battling ruthless enemies to reclaim her homeland.
             </p>
-
-            <Button 
-              className="
-                bg-[#FA4032] 
-                hover:bg-[#FA4032]/40 
-                text-base 
-                py-1 
-                px-8 
-                mt-10
-              "
-            >
-              Watch
-            </Button>
+            <div className="flex justify-start mt-5">
+              <WatchButton href={'/'} title="Watch Now" />
+            </div>
           </div>
 
           {/* Featured Image with Icons */}
@@ -141,7 +150,6 @@ const Header = () => {
                 group-hover:scale-110 
                 transition-transform 
                 duration-300
-               
               "
             />
           </div>
@@ -151,17 +159,17 @@ const Header = () => {
   );
 }
 
-// MenuItem Component with Props
 const MenuItem = ({ href, name }: MenuItemProps) => {
   return (
     <ReactScrollLink 
       to={href} 
-      activeClass="active" 
+      activeClass="!text-[#FAB12F]" 
       spy={true} 
       smooth={true} 
-      offset={50} 
-      duration={500} 
-      className="text-xl font-medium text-slate-200 hover:text-[#FAB12F] cursor-pointer"
+      offset={0} 
+      duration={800} 
+      isDynamic
+      className="text-xl font-medium text-slate-200 hover:!text-[#FAB12F]/50 cursor-pointer"
     >
       {name}
     </ReactScrollLink>

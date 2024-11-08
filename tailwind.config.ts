@@ -53,7 +53,7 @@ const config: Config = {
   			}
   		},
 			backgroundImage: {
-				"primary-gradient": "linear-gradient(90deg, rgba(0,0,0,0.5550595238095238) 0%, rgba(0,0,0,0.03405112044817926) 35%);"
+				"primary-gradient": "linear-gradient(114deg, rgba(0,0,0,0.7315301120448179) 0%, rgba(0,0,0,0.3477766106442577) 35%);"
 			},
   		borderRadius: {
   			lg: 'var(--radius)',

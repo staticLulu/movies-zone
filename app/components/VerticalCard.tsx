@@ -11,7 +11,7 @@ export function VerticalCard({image, name}:{image: string; name: any;}) {
         w-full 
         relative 
         max-w-xs 
-        h-[330px] 
+        h-[300px] 
         hover:scale-105 
         transition-transform 
         duration-500
@@ -61,7 +61,20 @@ export function VerticalCard({image, name}:{image: string; name: any;}) {
             className="object-cover object-top h-auto w-[200px] opacity-90 hover:opacity-95"
           />
 
-          <p className="text-white text-xl text-center p-4 h-[100px]">{name}</p>
+          <p 
+            className="
+              text-white 
+              text-lg 
+              text-center 
+              p-4 
+              h-[80px] 
+              flex 
+              items-center 
+              justify-center
+            "
+          >
+            {name}
+          </p>
         </Card>
         <MeteorEffect number={20} />
       </div>
