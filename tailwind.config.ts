@@ -10,6 +10,7 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+				myContentSection: "#1E1E1E",
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {
@@ -51,12 +52,51 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+			backgroundImage: {
+				"primary-gradient": "linear-gradient(114deg, rgba(0,0,0,0.7315301120448179) 0%, rgba(0,0,0,0.3477766106442577) 35%);"
+			},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
-  		}
-  	}
+  		},
+			animation: {
+        "meteor-effect": "meteor 6s linear infinite",
+      },
+			keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+				pulse: {
+					"0%": { transform: "rotate(215deg) translateX(20px)", opacity: "0" },
+          "100%": {
+            transform: "rotate(215deg) translateX(0)",
+            opacity: "1",
+          },
+				}
+      },
+  	},
+		screens: {
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
+    }
   },
   plugins: [require("tailwindcss-animate")],
 };

@@ -1,0 +1,33 @@
+[
+  {
+    "id": "1",
+    "name": "Uncharted",
+    "image": "/action-movies/uncharted.png"
+
+  },
+  {
+    "id": "2",
+    "name": "Mad Max: Fury Road",
+    "image": "/action-movies/mad-max-fury-road.png"
+  },
+  {
+    "id": "3",
+    "name": "Dune: Part One",
+     "image": "/action-movies/dune-part-one.png"
+  },
+  {
+    "id": "4",
+    "name": "the Gray Man",
+     "image": "/action-movies/the-gray-man.png"
+  },
+  {
+    "id": "5",
+    "name": "Road House",
+     "image": "/action-movies/road-house.png"
+  },
+  {
+    "id": "5",
+    "name": "Top Gun: Maverick",
+     "image": "/action-movies/top-gun-maverick.png"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Game pf Thrones",
+    "image": "/top-rated/game-of-thrones.png"
+
+  },
+  {
+    "id": "2",
+    "name": "Spider-Man: No Way Home",
+    "image": "/top-rated/spider-man-no-way-home.png"
+  },
+  {
+    "id": "3",
+    "name": "Peaky Blinders",
+     "image": "/top-rated/peaky-blinders.png"
+  },
+  {
+    "id": "4",
+    "name": "WandaVision",
+     "image": "/top-rated/wandavision.png"
+  },
+  {
+    "id": "5",
+    "name": "LOKI: SEASON2 (2023)",
+     "image": "/top-rated/loki-season2.png"
+  },
+  {
+    "id": "6",
+    "name": "The Night Agent",
+     "image": "/top-rated/the-night-agent.png"
+  },
+  {
+    "id": "7",
+    "name": "Blade Runner 2049",
+     "image": "/top-rated/blade-runner-2049.png"
+  },
+  {
+    "id": "8",
+    "name": "Naruto: Shippuden",
+     "image": "/top-rated/naruto-shippuden.png"
+  },
+  {
+    "id": "9",
+    "name": "Mad Max: Fury Road",
+     "image": "/top-rated/mad-max-fury-road.png"
+  },
+  {
+    "id": "10",
+    "name": "Fallout",
+     "image": "/top-rated/fallout.png"
+  }, {
+    "id": "11",
+    "name": "1899",
+     "image": "/top-rated/1899.png"
+  },
+  {
+    "id": "12",
+    "name": "Death Note",
+     "image": "/top-rated/death-note.png"
+  }
+]
