@@ -28,7 +28,7 @@ const FooterComponent = () => {
           <div className="flex gap-10">
             <div>
               <FootHeader title="Address"/>
-              <div className="grid gap-16 mt-4">
+              <div className="grid gap-9 mt-4">
                 <FootBorderMenu 
                   head="Address:" 
                   content="Phnom Penh, Cambodia" 
