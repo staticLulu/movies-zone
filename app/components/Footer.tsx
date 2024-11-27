@@ -1,9 +1,10 @@
+'use client'
+
 import { VideoIcon } from "@radix-ui/react-icons";
 import { Link } from "react-scroll";
 import { MenuItemProps, menuItems } from "./Header";
 
 const FooterComponent = () => {
-
   return (
     <div className="bg-black text-white">
       <div className="max-w-screen-xl mx-auto p-12">
