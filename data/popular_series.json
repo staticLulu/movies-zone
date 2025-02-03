@@ -1,0 +1,64 @@
+[
+  {
+    "id": "1",
+    "name": "Game of Thrones",
+    "image": "/popular-series/game-of-thrones.png"
+
+  },
+  {
+    "id": "2",
+    "name": "Manifest",
+    "image": "/popular-series/manifest.png"
+  },
+  {
+    "id": "3",
+    "name": "Peaky Blinders",
+     "image": "/popular-series/peaky-blinders.png"
+  },
+  {
+    "id": "4",
+    "name": "Money Heist",
+     "image": "/popular-series/monkey-heist.png"
+  },
+  {
+    "id": "5",
+    "name": "LOKI: SEASON 2 (2023)",
+     "image": "/popular-series/loki-season2.png"
+  },
+  {
+    "id": "6",
+    "name": "The Night Agent",
+    "image": "/popular-series/the-night-agent.png"
+
+  },
+  {
+    "id": "7",
+    "name": "Another Self",
+    "image": "/popular-series/another-self.png"
+  },
+  {
+    "id": "8",
+    "name": "Sense8",
+     "image": "/popular-series/sense8.png"
+  },
+  {
+    "id": "9",
+    "name": "Travelers",
+     "image": "/popular-series/travelers.png"
+  },
+  {
+    "id": "10",
+    "name": "The Signal",
+     "image": "/popular-series/the-signal.png"
+  },
+  {
+    "id": "11",
+    "name": "Ozark",
+     "image": "/popular-series/ozark.png"
+  },
+  {
+    "id": "12",
+    "name": "The Last Kingdom",
+     "image": "/popular-series/the-last-kingdom.png"
+  }
+]

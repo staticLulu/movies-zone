@@ -1,0 +1,62 @@
+[
+  {
+    "id": "1",
+    "name": "Uncharted",
+    "image": "/popular-movies/uncharted.png"
+  },
+  {
+    "id": "2",
+    "name": "Spider-Man: No Way Home",
+    "image": "/popular-movies/spider-man-no-way-home.png"
+  },
+  {
+    "id": "3",
+    "name": "Guy Ritchie's The Convenant",
+     "image": "/popular-movies/guy-ritchie's-the-convenant.png"
+  },
+  {
+    "id": "4",
+    "name": "Lift",
+     "image": "/popular-movies/lift.png"
+  },
+  {
+    "id": "5",
+    "name": "Family Switch",
+     "image": "/popular-movies/family-switch.png"
+  },
+  {
+    "id": "6",
+    "name": "Blade Runner 2049",
+     "image": "/popular-movies/blade-runner-2049.png"
+  },
+  {
+    "id": "7",
+    "name": "Journey 2: The Mysterious Island",
+     "image": "/popular-movies/jurney2-the-mysterious-island.png"
+  },
+  {
+    "id": "8",
+    "name": "Mad Max: Fury Road",
+     "image": "/popular-movies/mad-max-fury-road.png"
+  },
+  {
+    "id": "9",
+    "name": "Fallout",
+     "image": "/popular-movies/fallout.png"
+  },
+  {
+    "id": "10",
+    "name": "Nightbooks",
+     "image": "/popular-movies/nightbooks.png"
+  },
+  {
+    "id": "11",
+    "name": "Slumberland",
+     "image": "/popular-movies/slumberland.png"
+  },
+  {
+    "id": "12",
+    "name": "The School for Good and Evil",
+     "image": "/popular-movies/the-school-for-good-n-evil.png"
+  }
+]

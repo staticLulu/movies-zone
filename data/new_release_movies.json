@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "name": "ATLAS",
+    "image": "/new-releases/atlas.png"
+
+  },
+  {
+    "id": "2",
+    "name": "THE WAGES OF FEAR",
+    "image": "/new-releases/the-wages-of-fear.png"
+  },
+  {
+    "id": "3",
+    "name": "SUPACELL",
+     "image": "/new-releases/supacell.png"
+  },
+  {
+    "id": "4",
+    "name": "VIKINGS: VALHALLA",
+     "image": "/new-releases/vikings-valhalla.png"
+  },
+  {
+    "id": "5",
+    "name": "RISING IMPACT",
+     "image": "/new-releases/rising-impact.png"
+  }
+]

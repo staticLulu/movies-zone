@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "name": "GODZILLA X KONG: THE NEW EMPIRE",
+    "image": "/trending-now/godzilla-x-kong-the-new-empire.png"
+
+  },
+  {
+    "id": "2",
+    "name": "MADAME WEB",
+    "image": "/trending-now/madame-web.png"
+  },
+  {
+    "id": "3",
+    "name": "THE BOYS",
+     "image": "/trending-now/the-boys.png"
+  },
+  {
+    "id": "4",
+    "name": "DOCTOR WHO",
+     "image": "/trending-now/doctor-who.png"
+  },
+  {
+    "id": "5",
+    "name": "JUJUTSU KAISEN",
+     "image": "/trending-now/jujutsu-kaisen.png"
+  }
+]
