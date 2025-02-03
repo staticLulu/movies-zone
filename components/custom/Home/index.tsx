@@ -24,7 +24,7 @@ const HomeComponent = () => {
         <div className="max-w-[440px]">
           <p className="text-4xl font-bold text-[#FEF3E2]">Furiosa: A Mad Max Saga</p>
           <p className="text-slate-300 mt-2">
-            In "Furiosa: A Mad Max Saga," the fierce warrior Furiosa embarks on a perilous journey through a 
+            In &quot;Furiosa: A Mad Max Saga,&quot; the fierce warrior Furiosa embarks on a perilous journey through a 
             post-apocalyptic wasteland, battling ruthless enemies to reclaim her homeland.
           </p>
 
@@ -53,10 +53,10 @@ const HomeComponent = () => {
               left-[110px] 
               text-white 
               shadow-sm 
-              z-10 
+              z-0 
               group-hover:scale-110 
-              transition-transform 
-              duration-300
+              group-hover:transition-transform 
+              group-hover:duration-300
               bg-white/40
               rounded-full
               p-2
@@ -73,8 +73,8 @@ const HomeComponent = () => {
               object-cover 
               object-center 
               group-hover:scale-110 
-              transition-transform 
-              duration-300
+              group-hover:transition-transform 
+              group-hover:duration-300
             "
           />
           <StarIcon 
@@ -86,8 +86,8 @@ const HomeComponent = () => {
               left-2 
               text-[#FEF3E2] 
               group-hover:scale-110 
-              transition-transform 
-              duration-300
+              group-hover:transition-transform 
+              group-hover:duration-300
               
             "
           />

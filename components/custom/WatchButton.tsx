@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { ReactNode } from "react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { RocketIcon } from "@radix-ui/react-icons";
@@ -11,7 +11,7 @@ export const WatchButton = ({
   title,
 }: {
   className?: string;
-  href: any;
+  href: string;
   title: string;
 }) => {
   return (
@@ -24,7 +24,7 @@ export const WatchButton = ({
     )}
     >
       <div className="absolute inset-0 bg-dot-black/[0.1]" />
-      <div className="relative z-40">
+      <div className="relative z-10">
         <button 
           className="
             relative 
@@ -75,7 +75,11 @@ export const WatchButton = ({
                 ease-out
               "
             >{title}</p>
-            <RocketIcon width={20} height={20} className="transition-all duration-300 ease-out text-[#FA4032]" />
+            <RocketIcon 
+              width={20} 
+              height={20} 
+              className="transition-all duration-300 ease-out text-[#FA4032]" 
+            />
           </div>
         </button>
       </div>

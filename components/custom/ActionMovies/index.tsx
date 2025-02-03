@@ -1,17 +1,16 @@
 'use client'
 
-import { TMovies } from "@/app/types/trending_movies";
+import { TMovies } from "@/types/trending_movies";
 import ContentSection from "../ContentSection";
-import { CustomCard } from "../CustomCard";
-import popular_series from '@/app/data/popular_series.json';
+import action_movies from '@/data/action_movies.json';
 import VerticalCard from "../VerticalCard";
 
-const Series = () => {
+const ActionMovies = () => {
   return (
     <div className="max-w-screen-xl mx-auto p-5 mt-8">
-      <ContentSection title="POPULAR SERIES">
+      <ContentSection title="ACTION MOVIES">
         <div className="grid grid-cols-6 gap-6 mt-8">
-          {popular_series.map((t_movie: TMovies, idx: number) => (
+          {action_movies.map((t_movie: TMovies, idx: number) => (
             <VerticalCard key={idx} image={t_movie.image} name={t_movie.name} /> 
           ))}
         </div>
@@ -20,4 +19,4 @@ const Series = () => {
   )
 }
 
-export default Series;
+export default ActionMovies;
