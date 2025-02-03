@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card"
 import Image from "next/image"
 import MeteorEffect from "./MeteorEffect";
 
-export function VerticalCard({image, name}:{image: string; name: any;}) {
+export function VerticalCard({image, name}:{image: string; name: string;}) {
   return (
     <div 
       className="
@@ -13,8 +13,8 @@ export function VerticalCard({image, name}:{image: string; name: any;}) {
         max-w-xs 
         h-[300px] 
         hover:scale-105 
-        transition-transform 
-        duration-500
+        hover:transition-transform 
+        hover:duration-500
         cursor-pointer
       "
     >
@@ -57,7 +57,7 @@ export function VerticalCard({image, name}:{image: string; name: any;}) {
             alt="godzilla-x-kong-the-new-empire" 
             width={500} 
             height={500} 
-            unoptimized
+            priority={true}
             className="object-cover object-top h-auto w-[200px] opacity-90 hover:opacity-95"
           />
 

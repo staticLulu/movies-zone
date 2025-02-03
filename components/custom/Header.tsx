@@ -43,7 +43,7 @@ const Header = () => {
           alt="hero2"
           width={1000}
           height={600}
-          unoptimized
+          priority={true}
           className="bg-primary-gradient object-cover w-full h-auto"
         />
       </Link>
@@ -53,24 +53,45 @@ const Header = () => {
 
       {/* Main Header */}
       <header className={`
-        fixed top-0 left-0 w-full z-50 
-        transition-all duration-0 
+        fixed 
+        top-0 
+        left-0 
+        w-full 
+        z-10 
         ${scrolled ? 'backdrop-blur-3xl bg-slate-800/40' : ''}
       `}>
         <div className="max-w-screen-xl mx-auto p-4">
           <div className="flex justify-between items-center">
 
             {/* Logo Section */}
-            <div className="flex items-center gap-1.5">
+            <Link href={'/'} className="flex items-center gap-1.5">
               <VideoIcon width={40} height={40} className="text-[#FA4032]" /> 
               <p className="text-4xl font-semibold">MOVIES</p>
               <p className="text-4xl text-[#FA4032] font-semibold">ZONE</p>
-            </div>
+            </Link>
 
             {/* Navigation Menu */}
             <nav className="flex gap-10 items-center">
               {menuItems.map((item, idx) => (
-                <MenuItem key={idx} name={item.name} href={item.href} />
+                <ReactScrollLink 
+                  key={idx}
+                  to={item.href} 
+                  activeClass="!text-[#FAB12F]" 
+                  spy={true} 
+                  smooth={true} 
+                  offset={72} 
+                  delay={0}
+                  duration={500} 
+                  className="
+                    text-xl 
+                    font-medium 
+                    text-slate-200 
+                    hover:!text-[#FAB12F]/50 
+                    cursor-pointer
+                  "
+                >
+                  {item.name}
+                </ReactScrollLink>
               ))}
             </nav>
           </div>
@@ -117,8 +138,8 @@ const Header = () => {
                 shadow-sm 
                 z-10 
                 group-hover:scale-110 
-                transition-transform 
-                duration-300
+                group-hover:transition-transform 
+                group-hover:duration-300
                 bg-white/40
                 rounded-full
                 p-2
@@ -130,13 +151,14 @@ const Header = () => {
               alt="The Wages of Fear"
               width={270}
               height={270}
+              priority={true}
               className="
                 cursor-pointer
                 object-cover 
                 object-center 
                 group-hover:scale-110 
-                transition-transform 
-                duration-300
+                group-hover:transition-transform 
+                group-hover:duration-300
               "
             />
             <StarIcon 
@@ -148,8 +170,8 @@ const Header = () => {
                 left-2 
                 text-[#FEF3E2] 
                 group-hover:scale-110 
-                transition-transform 
-                duration-300
+                group-hover:transition-transform 
+                group-hover:duration-300
               "
             />
           </div>
@@ -158,22 +180,5 @@ const Header = () => {
     </div>
   );
 }
-
-const MenuItem = ({ href, name }: MenuItemProps) => {
-  return (
-    <ReactScrollLink 
-      to={href} 
-      activeClass="!text-[#FAB12F]" 
-      spy={true} 
-      smooth={true} 
-      offset={0} 
-      duration={800} 
-      isDynamic
-      className="text-xl font-medium text-slate-200 hover:!text-[#FAB12F]/50 cursor-pointer"
-    >
-      {name}
-    </ReactScrollLink>
-  );
-};
 
 export default Header;

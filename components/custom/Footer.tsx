@@ -20,9 +20,10 @@ const FooterComponent = () => {
           <div className="grid gap-5 justify-center">
             <FootHeader title="Useful Links"/>
             <div className="grid gap-5 text-start pl-3">
-              {menuItems.map((menu: MenuItemProps, idx: number) => (
-                <FootMenu key={idx} to={menu.href} name={menu.name} />
-              )).concat(( <FootMenu to="/" name="Series" />))}
+              {[...menuItems.map((menu: MenuItemProps, idx: number) => (
+                <FootMenu key={menu.href || idx} to={menu.href} name={menu.name} />
+              )),
+              <FootMenu key="series" to="/" name="Series" />]}
             </div>
           </div>
 
@@ -77,10 +78,10 @@ const FootMenu = ({to, name}:{to: string; name: string;}) => {
     <Link 
       to={to} 
       href='' 
-      isDynamic
-      spy
+      spy={true}
       delay={0}
-      duration={700}
+      duration={500}
+      smooth={true}
       activeClass="!text-[#FA4032]" 
       className="hover:!text-[#FA4032]"
     >

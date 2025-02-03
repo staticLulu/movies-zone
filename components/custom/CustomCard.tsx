@@ -12,8 +12,8 @@ export function CustomCard({ image, name }: { image: string; name: string }) {
         relative 
         max-w-xs 
         hover:scale-105 
-        transition-transform 
-        duration-500
+        hover:transition-transform 
+        hover:duration-500
         cursor-pointer
         rounded-2xl
         overflow-hidden
@@ -28,11 +28,11 @@ export function CustomCard({ image, name }: { image: string; name: string }) {
           bg-gradient-to-r 
           from-blue-500 
           to-teal-500 
-          scale-[0.80] 
+          hover:scale-[0.80] 
           bg-red-500 
           rounded-2xl 
           blur-3xl
-          animate-[fadeInUp_0.8s_ease-out_forwards]
+          hover:animate-[fadeInUp_0.8s_ease-out_forwards]
         "
       />
       <div 
@@ -57,7 +57,7 @@ export function CustomCard({ image, name }: { image: string; name: string }) {
             border-none 
             relative 
             transition-transform 
-            duration-500
+            duration-300
             cursor-pointer
             rounded-2xl
           "
@@ -67,7 +67,7 @@ export function CustomCard({ image, name }: { image: string; name: string }) {
             alt="godzilla-x-kong-the-new-empire" 
             width={300} 
             height={300} 
-            unoptimized
+            priority={true}
             className="
               object-cover 
               object-center 

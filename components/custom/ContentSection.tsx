@@ -3,8 +3,9 @@
 import { Progress } from "@/components/ui/progress";
 import { ChevronRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
+import { ReactNode } from 'react';
 
-const ContentSection = ({title, children}:{title: string; children: any}) => {
+const ContentSection = ({title, children}:{title: string; children: ReactNode}) => {
   return (
     <div>
       <div className="flex justify-between">

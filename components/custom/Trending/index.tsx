@@ -1,9 +1,9 @@
 'use client'
 
-import { TMovies } from "@/app/types/trending_movies";
+import { TMovies } from "@/types/trending_movies";
 import ContentSection from "../ContentSection";
 import { CustomCard } from "../CustomCard";
-import trending_movies from '@/app/data/trending_movies.json';
+import trending_movies from '@/data/trending_movies.json';
 
 const Trending = () => {
   return (
